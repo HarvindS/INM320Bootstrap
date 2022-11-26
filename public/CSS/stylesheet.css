@@ -1,0 +1,35 @@
+/* Customized Bootstrap */
+.bg-primary{
+    background-color: #F7F8FC !important;
+}
+
+.navbar-toggler{
+    border: none !important;
+}
+
+.offcanvas {
+    max-width: 50%;
+}
+
+.carousel {
+    height: 333px;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    .offcanvas-body{
+        margin-left: -50px !important;
+    }
+
+    main.pt-md-0{
+        padding-left: 300px;
+    }   
+    .navbar{
+        max-width: 300px;
+        min-width: 250px;
+    }
+}
+
+#profilePic {
+    max-width: 50px;
+}

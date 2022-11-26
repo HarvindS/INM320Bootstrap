@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Bootstrap</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="/CSS/stylesheet.css" rel="stylesheet">
+</head>
+<body class="container-fluid bg-primary text-gray">
+  <div class="row">
+    <!-- Navigation Element -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top flex-md-column  pt-0 pt-md-4 mb-md-0">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbarMd" aria-controls="offcanvasDarkNavbarMd">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand mx-auto" href="#">Dashboard Kit</a>
+
+      <div class="offcanvas offcanvas-start text-bg-dark py-md-3 " tabindex="-1" id="offcanvasDarkNavbarMd" aria-labelledby="offcanvasDarkNavbarMdLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <h5 class="offcanvas-title justify-item-start" id="offcanvasDarkNavbarLabel">Dashboard Kit</h5>
+        </div>
+        <div class="offcanvas-body vh-100">
+          <ul class="navbar-nav nav-justified-start flex-column pe-5">
+            <li class="nav-item py-1 d-flex align-items-center border-start bg-grey">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pie-chart-fill ms-5" viewBox="0 0 16 16">
+                <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778l-5.5 5.5zM8.5.015V7.5h7.485A8.001 8.001 0 0 0 8.5.015z"/>
+              </svg>
+              <a class="nav-link active ps-4 me-5" aria-current="page" href="#">Overview</a>
+            </li>
+            <li class="nav-item py-1 d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-detailed-fill ms-5" viewBox="0 0 16 16">
+                <path d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6V4.5Zm4 1a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5Zm0 5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5ZM4 8a1 1 0 0 0 1 1h6a1 1 0 1 0 0-2H5a1 1 0 0 0-1 1Z"/>
+              </svg>
+              <a class="nav-link ps-4 me-5" href="#">Tickets</a>
+            </li>
+            <li class="nav-item py-1 d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb-fill ms-5" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+              <a class="nav-link ps-4 me-5" href="#">Ideas</a>
+            </li>
+            <li class="nav-item py-1 d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill ms-5" viewBox="0 0 16 16">
+                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+              </svg>
+              <a class="nav-link ps-4 me-5" href="#">Contacts</a>
+            </li>
+            <li class="nav-item py-1 d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-badge-fill ms-5" viewBox="0 0 16 16">
+                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm4.5 0a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm5 2.755C12.146 12.825 10.623 12 8 12s-4.146.826-5 1.755V14a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-.245z"/>
+              </svg>
+              <a class="nav-link ps-4 me-5" href="#">Agents</a>
+            </li>
+            <li class="nav-item py-1 d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journals ms-5" viewBox="0 0 16 16">
+                <path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z"/>
+                <path d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z"/>
+              </svg>
+              <a class="nav-link ps-4 me-5" href="#">Articles</a>
+            </li>
+            <hr class="divider">
+            <li class="nav-item py-1 d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill ms-5" viewBox="0 0 16 16">
+                <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+              </svg>
+              <a class="nav-link ps-4 me-5" href="#">Settings</a>
+            </li>
+            <li class="nav-item py-1 d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award ms-5" viewBox="0 0 16 16">
+                <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
+                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+              </svg>
+              <a class="nav-link ps-4 me-5" href="#">Subscription</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navigation Element -->
+    <!-- Main Content -->
+    <main class="container-fluid mt-md-0 mt-4 pt-4 pt-md-0">
+
+      <!-- Top Bar -->
+      <header class="container-fluid row row-cols-auto d-flex justify-content-between align-items-center pt-0 pt-md-4">
+        <!-- Page Title -->
+        <h3 class="col flex-grow-1 ">Overview</h3>
+        <!-- User Notifications Search -->
+        <span class="d-flex">
+          <!-- Search Icon -->
+          <span class="col d-flex flew-row align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+          </span>
+          <!-- Notification Icon -->
+          <span class="col d-flex flew-row align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+              <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+            </svg> 
+          </span>
+          <!-- User Profile -->
+          <span class="col d-flex flew-row align-items-center border-start ps-4">
+            <h6>Franz Ferdinand</h6>
+            <!-- Profile picture -->
+            <img id="profilePic" class="border rounded-circle img-fluid ms-2" src="https://d26horl2n8pviu.cloudfront.net/link_data_pictures/images/000/350/558/shared_link/francis-ferdinand-9300680-1-402.jpg?1545138615" >
+          </span>
+        </span>
+      </header>
+
+      <!-- Ticket Counters -->
+      <span class="container px-5 pt-1 pt-lg-4 pb-2">
+        <span class="row gx-2 mt-5 justify-content-around align-content-between ">
+          <span class="col-6 col-lg-3 px-3 py-lg-0 py-3">
+            <article class="px-5 rounded bg-white d-flex flex-column">
+              <h5 class="align-self-center pt-4 pb-0">Unresolved</h5>
+              <h1 class="align-self-center pt-0 pb-3">60</h1>
+            </article>
+          </span>
+          <span class="col-6 col-lg-3 px-3 py-lg-0 py-3">
+            <article class="px-5 rounded bg-white d-flex flex-column">
+              <h5 class="align-self-center pt-4 pb-0">Overdue</h5>
+              <h1 class="align-self-center pt-0 pb-3">16</h1>
+            </article>
+          </span>
+          <span class="col-6 col-lg-3 px-3 py-lg-0 py-3">
+            <article class="rounded bg-white d-flex flex-column">
+              <h5 class="align-self-center pt-4 pb-0">Open</h5>
+              <h1 class="align-self-center pt-0 pb-3">43</h1>
+            </article>
+          </span>
+          <span class="col-6 col-lg-3 px-3 py-lg-0 py-3">
+            <article class="rounded bg-white d-flex flex-column">
+              <h5 class="align-self-center pt-4 pb-0">On Hold</h5>
+              <h1 class="align-self-center pt-0 pb-3">64</h1>
+            </article>
+          </span>
+        </span>
+      </span>
+      <!-- Graph Tickets Counters -->
+      <span class="container-fluid px-5 pt-1 pt-lg-4 pb-2 mx-2">
+          <span class="row-cols-1 row-cols-xl-2 d-flex flex-column flex-xl-row bg-white rounded mx-2 px-3">
+            <!-- Graph -->
+            <span class="col col-xl-9 pt-4">
+              <h5>Today's trends</h5>
+              <img class="img-fluid w-100 pe-4 pb-4" src="/Images/graphs.png" alt="Graph showing trends">
+            </span>
+            <!-- Right column -->
+            <span class="col col-xl-3 d-flex flex-wrap flex-xl-column">
+              <!-- Resolved -->
+              <span class=" w-100 text-center flex-grow-1">
+                <!-- Mobile Display -->
+                <span class="border-top border-bottom d-flex d-xl-none text-center flex-column justify-content-center py-2 ">
+                  <h6>Resolved</h6>
+                  <h4>449</h4>
+                </span>
+                <!-- Wide Display -->
+                <span class="border-start border-bottom d-none d-xl-flex flex-column justify-content-center pt-4 pb-2 h-100">
+                  <h6>Resolved</h6>
+                  <h4>449</h4>
+                </span>
+              </span>
+              <!-- Received -->
+              <span class=" w-100 text-center flex-grow-1">
+                <!-- Mobile Display -->
+                <span class="border-top border-bottom d-flex d-xl-none text-center flex-column justify-content-center py-2 ">
+                  <h6>Received</h6>
+                  <h4>426</h4>
+                </span>
+                <!-- Wide Display -->
+                <span class="border-start border-bottom d-none d-xl-flex flex-column justify-content-center py-3 h-100">
+                  <h6>Received</h6>
+                  <h4>426</h4>
+                </span>
+              </span>
+              <!-- Average first response time -->
+              <span class=" w-100 text-center flex-grow-1">
+                <!-- Mobile Display -->
+                <span class="border-top border-bottom d-flex d-xl-none text-center flex-column justify-content-center py-2 ">
+                  <h6>Average first response time</h6>
+                  <h4>33m</h4>
+                </span>
+                <!-- Wide Display -->
+                <span class="border-start border-bottom d-none d-xl-flex flex-column justify-content-center py-3 h-100">
+                  <h6>Average first response time</h6>
+                  <h4>33m</h4>
+                </span>
+              </span>
+              <!-- Average response time -->
+              <span class=" w-100 text-center flex-grow-1">
+                <!-- Mobile Display -->
+                <span class="border-top border-bottom d-flex d-xl-none text-center flex-column justify-content-center py-2 ">
+                  <h6>Average response time</h6>
+                  <h4>3h 8m</h4>
+                </span>
+                <!-- Wide Display -->
+                <span class="border-start border-bottom d-none d-xl-flex flex-column justify-content-center py-3 h-100">
+                  <h6>Average response time</h6>
+                  <h4>3h 8m</h4>
+                </span>
+              </span>
+              <!-- Resolution within SLA -->
+              <span class=" w-100 text-center flex-grow-1">
+                <!-- Mobile Display -->
+                <span class="d-flex d-xl-none text-center flex-column justify-content-center py-2 ">
+                  <h6>Resolution within SLA</h6>
+                  <h4>94%</h4>
+                </span>
+                <!-- Wide Display -->
+                <span class="border-start d-none d-xl-flex flex-column justify-content-center py-3 h-100">
+                  <h6>Resolution within SLA</h6>
+                  <h4>94%</h4>
+                </span>
+              </span>
+            </span>
+          </span>
+      </span>
+
+      <!-- Additional Content -->
+      <span class="row">
+        <!-- Check List -->
+        <span class="col-12 col-lg-6 px-3 py-lg-0 py-3">
+          <article class="px-0 rounded bg-white d-flex flex-column">
+            <h5 class="pt-4 ps-4">Tasks</h5>
+
+            <!-- Add new task -->
+            <span class="container-fluid d-flex align-items-center w-100 my-3 ps-3">
+              <input class="form-control border-0 flex-grow-1" type="text" placeholder="Create new task" aria-label="default input example">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="grey" class="bi bi-plus-square-fill me-4" viewBox="0 0 16 16">
+                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+              </svg>
+            </span>
+            <!-- Checklist items -->
+            <span class="container-fluid w-100 px-0">
+              <!-- Checklist item -->
+              <span class="container-fluid border-top w-100 d-flex align-items-center mx-0 ps-4" aria-labelledby="item1">
+                <!-- Item to Check -->
+                <input type="checkbox" class="btn-check" id="item1" autocomplete="off">
+                <label class="btn btn-outline-primary rounded-circle py-1 px-1" for="item1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                  <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                  </svg>
+                </label>
+                <!-- Check item text -->
+                <p class="flex-grow1 pt-3 ps-4" for="item1">Check the circle pls</p>
+              </span>
+              <!-- Checklist item -->
+              <span class="container-fluid border-top w-100 d-flex align-items-center mx-0 ps-4" aria-labelledby="item2">
+                <!-- Item to Check -->
+                <input type="checkbox" class="btn-check" id="item2" autocomplete="off" checked >
+                <label class="btn btn-outline-primary rounded-circle py-1 px-1" for="item2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                  <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                  </svg>
+                </label>
+                <!-- Check item text -->
+                <p class="flex-grow1 pt-3 ps-4" for="item2">Finish Bootstrap</p>
+              </span>
+              <!-- Checklist item -->
+              <span class="container-fluid border-top w-100 d-flex align-items-center mx-0 ps-4 pb-2" aria-labelledby="item3">
+                <!-- Item to Check -->
+                <input type="checkbox" class="btn-check" id="item3" autocomplete="off">
+                <label class="btn btn-outline-primary rounded-circle py-1 px-1" for="item3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                  <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                  </svg>
+                </label>
+                <!-- Check item text -->
+                <p class="flex-grow1 pt-3 ps-4" for="item3">Headless CMS</p>
+              </span>
+            </span>
+          </article>
+        </span>
+
+        <span class="col-12 col-lg-6 px-3 py-lg-0 py-3">
+          <article class="px-5 rounded bg-white d-flex flex-column">
+            <h5 class="align-self-center pt-4 pb-0">Team Memories</h5>
+            <span id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <span class="carousel-inner">
+                <span class="carousel-item active">
+                  <img src="https://images2.minutemediacdn.com/image/upload/c_fill,w_1440,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/a-team-1-4bac746d6d38f0aa6ce70a97629a3918.jpg" class="d-block w-100" alt="Team Portrait">
+                </span>
+                <span class="carousel-item">
+                  <img src="https://www.nationalreview.com/wp-content/uploads/2021/05/a-team-full-cast-youtube.jpg?w=1200" class="d-block w-100" alt="Team Outing">
+                </span>
+                <span class="carousel-item">
+                  <img src="https://www.looper.com/img/uploads/2017/02/a-team-photo-780x438.jpg" class="d-block w-100" alt="Team Building Exercise">
+                </span>
+              </span>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </span>
+          </article>
+        </span>
+      </span>
+
+    </main>
+    <!-- End of Main Content -->
+  </div>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
